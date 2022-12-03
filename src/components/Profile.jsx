@@ -1,0 +1,10 @@
+import "../App.css";
+import React from "react";
+const Profile = () => {
+  return (
+    <div>
+      <div></div>
+    </div>
+  );
+};
+export default Profile;
