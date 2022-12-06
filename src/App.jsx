@@ -1,26 +1,22 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Posts from "./components/Posts";
 import Profile from "./components/Profile";
 import UserNavbar from "./components/UserNavbar";
+import { useEffect, useState } from "react";
+import { createContext } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import SearchSwitch from "./components/SearchSwitch";
+export const NavbarChange = createContext();
 const App = () => {
-  const [data, setData] = useState("");
-  const instance = axios.create({
-    baseURL: "https://dummyjson.com/users",
-  });
-
-  const getData = async () => {
-    const res = await instance.get();
-    console.log(res.data.users);
-    setData(res.data.users);
-  };
-
+  const [navbar, setNavbar] = useState(false);
   return (
     <div className="container">
+      <div></div>
       <div className="navbar">
-        <Navbar />
+        <NavbarChange.Provider value={{ navbar, setNavbar }}>
+          <div className="App">{navbar ? <SearchSwitch /> : <Navbar />}</div>
+        </NavbarChange.Provider>
       </div>
       <div className="midContainer">
         <div className="userNavbar">

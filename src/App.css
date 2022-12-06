@@ -5,7 +5,6 @@
   margin: 0;
   display: flex;
 }
-
 .inst{
   width:110px;
   height: 40px;
@@ -18,20 +17,16 @@ flex-direction: row;
   border:0.25px solid gray;
   width: 330px;
   height: 100vh;
-  background-color: #ffffff;
   position: fixed;
+  background-color: white;
 }
-
-
 .midContainer{
   margin-left: 850px;
   margin-top: 100px;
 }
 .postContainer{
-  margin-top: 200px;
   width: 470px;
-  height: 600px;
-  border: 0.25px solid black;
+  height: 600px; 
   border-radius: 10px;
   display: flex;
   justify-content: center; flex-direction: row;
@@ -43,7 +38,6 @@ flex-direction: row;
   display: flex;
   overflow: scroll;
   border-radius: 10px;
- 
 }
 .userContainer{
   display: flex;
@@ -57,7 +51,48 @@ flex-direction: row;
   border: 0.5px solid red;
   border-radius: 50%;
   margin: 10px;
-  
 }
+.SideBarItems{
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 310px;
+  height: 50px;
+}
+.SideBarItems:hover{
+  border-radius: 1px solid gray;
+  background-color:#F2F3F4 ;
+  border-radius: 10px;
+}
+.Icons{
+  display: flex;
+}
+.reactions{
+  font-family:  'Arial Narrow Bold', sans-serif;
+  margin-left: 15px;
+  margin-top: 15px;
+  color: #262626;
+}
+.tags{
+  margin-left: 15px;
+  margin-top: 5px;
+  color: gray;
+}
+.title{
+  margin-left: 15px;
+  margin-top: 5px;
+  color: gray;
 
-
+}
+.Post{
+  border-radius: 10px;
+ border: 0.25px solid gray;
+}
+.comment{
+  display: flex;
+  width: 470px;
+  height: 50px;
+  align-items: center;
+  margin-top: 5px;
+}

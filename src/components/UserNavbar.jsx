@@ -14,6 +14,7 @@ const UserNavbar = () => {
     console.log(res.data.users);
     setData(res.data.users);
   };
+
   useEffect(() => {
     getData();
   }, []);
