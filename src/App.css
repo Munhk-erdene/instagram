@@ -1,6 +1,4 @@
 .container{
-  width: 100vw;
-  height: 100vh;
   padding: 0;
   margin: 0;
   display: flex;
@@ -38,6 +36,7 @@ flex-direction: row;
   display: flex;
   overflow: scroll;
   border-radius: 10px;
+  margin-top: -80px;
 }
 .userContainer{
   display: flex;
@@ -48,7 +47,9 @@ flex-direction: row;
   justify-content: center;
   width: 50px;
   height: 50px;
-  border: 0.5px solid red;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to bottom left, #6600ff, #ff9900) border-box;
   border-radius: 50%;
   margin: 10px;
 }
@@ -95,4 +96,87 @@ flex-direction: row;
   height: 50px;
   align-items: center;
   margin-top: 5px;
+}
+.SidebarTwo{
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+}
+.SideBarItemsTwo{
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 80px;
+  height: 50px;
+}
+.SearchMap{
+  display: flex;
+  border-radius: 1px solid gray;
+  background-color:#F2F3F4 ;
+  border-radius: 10px;
+  height: 60px;
+  align-items: center;
+  width: 310px;
+  margin-top: 10px;
+  margin-left: 20px;
+  
+}
+.NavbarInput{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 310px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid #F2F3F4;
+  background-color:#F2F3F4 ;
+}
+.Search{
+  width: 270px
+}
+.SearchContainer{
+  border: 1px solid gray;
+  height: 100vh;
+  width: 350px;
+  margin-left: 80px;
+  overflow: scroll;
+  position: fixed;
+  border-radius: 10px;
+}
+.SearchImage{
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to bottom left, #6600ff, #ff9900) border-box;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.PostOne{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.Profile{
+  margin-left: 520px;
+  margin-top: -110px;
+  position: fixed;
+  height: 100vh;
+  width: 400px
+}
+.UserProfile{
+width: 100vh;
+height: 100vh;
+}
+.ProfileTwo{
+  border: 1px solid black;
+  width: 500px;
+  align-items: center;
+  height: 500px;
+}
+.topProfile{
+  display: flex;
 }

@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { NavbarChange } from "../App";
 import axios from "axios";
+import Search from "./Search";
+
+import NavbarTwo from "./NavbarTwo";
 
 export const instance = axios.create({
   baseURL: `https://dummyjson.com/users`,
@@ -20,6 +23,11 @@ const SearchSwitch = () => {
       setNavbar(false);
     }
   };
-  return <div>sex</div>;
+  return (
+    <div>
+      <NavbarTwo />
+      <Search />
+    </div>
+  );
 };
 export default SearchSwitch;
